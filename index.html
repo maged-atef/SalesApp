@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/StyleCSS.css" />
+
+    <title>معمل الطوارئ</title>
+  </head>
+  <body>
+    <div class="crud">
+      <!-- Head -->
+      <div class="head">
+        <div class="inner">
+          <h2 class="maintitle">مستشفي مبره العصافره - معمل الطواريء</h2>
+          <p id="time_Now" dir="ltr"></p>
+          <p id="shift"></p>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="input text-center container">
+        <div class="inner">
+          <h2 class="">بيانات المريض</h2>
+          <form class="navbar-form datauser" dir="rtl" role="search">
+            <div class="inputs">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control ptid"
+                  placeholder="الرقم التسلسلي"
+                  id="ptid"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control ptname"
+                  id="ptname"
+                  placeholder="اسم المريض"
+                />
+              </div>
+            </div>
+            <div class="tests">
+              <label for="">
+                BUN - CREATE<input
+                  type="checkbox"
+                  name="BUN - CREATE"
+                  value="BUN - CREATE"
+                  id="BUN - CREATE"
+              /></label>
+              <label for="">
+                AST - ALT<input
+                  type="checkbox"
+                  name="AST - ALT"
+                  value="AST - ALT"
+                  id="AST - ALT"
+              /></label>
+              <label for="">
+                TN-I - CKMB
+                <input
+                  type="checkbox"
+                  name="TN-I - CKMB"
+                  value="TN-I - CKMB"
+                  id="TN-I - CKMB"
+              /></label>
+              <label for="">
+                CBC<input type="checkbox" name="CBC" value="CBC" id="CBC"
+              /></label>
+              <label for="">
+                PT PT - PTT - INR<input
+                  type="checkbox"
+                  name="PT - PTT - INR"
+                  value="PT - PTT - INR"
+                  id="PT - PTT - INR"
+              /></label>
+              <label for="">
+                NA - K - MG -CA<input
+                  type="checkbox"
+                  name="NA - K - MG -CA"
+                  value="NA - K - MG -CA"
+                  id="NA - K - MG -CA"
+              /></label>
+              <label for="">
+                RH - GROUPING<input
+                  type="checkbox"
+                  name="RH - GROUPING"
+                  value="RH - GROUPING"
+                  id="RH - GROUPING"
+              /></label>
+              <label for="">
+                AMYLASE - LIPASE<input
+                  type="checkbox"
+                  name="AMYLASE - LIPASE"
+                  value="AMYLASE - LIPASE"
+                  id="AMYLASE - LIPASE"
+              /></label>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="register_test "
+              onclick="register()"
+            >
+              تسجيل
+            </button>
+          </form>
+        </div>
+      </div>
+
+     <div class="search ">
+<input type="search" class=" find form-control" name="" onkeyup="findPateint()" id="searchinput" placeholder="اكتب رقم المريض او اسمه"> 
+<i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+     </div>
+
+      </div>
+      <!-- Output -->
+      <div class="output">
+        <table class="table" id="tableData" dir="rtl">
+          <thead>
+            <tr>
+              <th scope="col">م</th>
+              <th scope="col">الرقم</th>
+              <th scope="col">اسم المريض</th>
+              <th scope="col">التحاليل</th>
+              <th scope="col">حذف</th>
+              <th scope="col">تعديل</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider" id="DataFill"></tbody>
+        </table>
+      </div>
+    </div>
+   
+
+
+    <script src="./JS/bootstrap.min.js"> </script>
+  <script src="./JS/JSCODE.js"></script>
+  </body>
+</html>

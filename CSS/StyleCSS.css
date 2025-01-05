@@ -1,0 +1,150 @@
+/* importing */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+/* Rest CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* global */
+body{
+    font-family: "Cairo",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(209, 196, 196);
+}
+
+/* top */
+.head .inner{ 
+  
+   color: rgb(136, 255, 0);
+   background-color: rgb(112, 99, 99);
+   text-align: center;
+   /* border-radius: .5rem; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 4rem;
+   flex-wrap: wrap;
+   
+}
+@media (max-width:400px) {
+    .head .inner h2{ 
+        font-size: 14px;
+        width: 100%;
+    }
+    .head .inner p{
+        font-size: 14px;
+        margin: 0 .5rem;
+    }
+    .head .inner{
+        padding: 0 0 ;
+    }
+    
+    
+}
+
+.crud .input { 
+   /* background-color: white; */
+    background-color: rgb(227, 246, 158);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin: 2rem auto;
+    border-radius: 2rem;
+}
+.crud form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+.tests{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2REM;
+    /* direction: rtl; */
+    text-align: left;
+    
+    
+  
+}
+.tests label{
+    /* border: 1px solid; */
+    /* border-radius: 10px; */
+    /* padding: 10px; */
+    margin-left: 10px;
+    width: 30%;
+}
+.tests input{
+    margin: 0 10px;
+}
+.form-group{
+    /* background-color: red; */
+}
+.output{ 
+    background-color: white;
+}
+.output thead th{
+    color: red;
+    /* background-color: green; */
+    text-align: center ;
+}
+
+.output tbody tr{ 
+    color: blue;
+    /* background-color: aqua; */
+    /* border:1px solid black; */
+    text-align: center;
+
+}
+@media (min-width:600px )  {
+    .inputs{ 
+        display: flex;
+        justify-content: center;
+        /* background-color: red; */
+        
+    }
+    .inputs .form-group{
+        width: 100%;
+    }
+    .inputs .form-group .ptid
+    {
+        
+        /* background-color: blue; */
+        width: 100%;
+    }
+    .inputs .form-group .ptname{ 
+        /* background-color: green; */
+        width: 100%;
+    }
+    
+    
+}
+
+#tableData{ 
+    width: 80%;
+    margin :0 auto; 
+}
+
+.search{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    /* background-color: red; */
+    margin: 1rem auto;
+    align-items: center;
+}
+.search .find{
+    width: 100% ;
+    /* background-color: blue; */
+    text-align: center;
+}
+.search i { 
+    padding-right: 2rem;
+}
