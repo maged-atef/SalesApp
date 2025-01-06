@@ -11,7 +11,7 @@ const msg = document.getElementById("msg");
 let containerBox = "";
 
 GetStoredData();
-// *Get Time
+
 setInterval(() => {
   const time = new Date();
   const hours = time.getHours();

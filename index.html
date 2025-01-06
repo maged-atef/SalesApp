@@ -75,39 +75,31 @@
         تسجيل
       </button>
     </div>
+    <div class="search ">
+      <input type="search" class=" find form-control" name="" onkeyup="findPateint()" id="searchinput"
+        placeholder="اكتب رقم المريض او اسمه">
+      <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+    </div>
+    <div class="output">
+      <table class="table" id="tableData" dir="rtl">
+        <thead>
+          <tr>
+            <th scope="col">م</th>
+            <th scope="col">الرقم</th>
+            <th scope="col">اسم المريض</th>
+            <th scope="col">التحاليل</th>
+            <th scope="col">الوقت</th>
 
+            <th scope="col">حذف</th>
+            <th scope="col">تعديل</th>
+
+          </tr>
+        </thead>
+        <tbody class="table-group-divider" id="DataFill" dir="ltr"></tbody>
+      </table>
+    </div>
   </div>
-
-  <div class="search ">
-    <input type="search" class=" find form-control" name="" onkeyup="findPateint()" id="searchinput"
-      placeholder="اكتب رقم المريض او اسمه">
-    <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
-  </div>
-
-  </div>
-  <!-- Output -->
-  <div class="output">
-    <table class="table" id="tableData" dir="rtl">
-      <thead>
-        <tr>
-          <th scope="col">م</th>
-          <th scope="col">الرقم</th>
-          <th scope="col">اسم المريض</th>
-          <th scope="col">التحاليل</th>
-          <th scope="col">الوقت</th>
-
-          <th scope="col">حذف</th>
-          <th scope="col">تعديل</th>
-
-        </tr>
-      </thead>
-      <tbody class="table-group-divider" id="DataFill" dir="ltr"></tbody>
-    </table>
-  </div>
-  </div>
-
-
-
+  
   <script src="./JS/bootstrap.min.js"> </script>
   <script src="./JS/JSCODE.js"></script>
 </body>
