@@ -30,6 +30,11 @@
       <div class="input text-center container">
         <div class="inner">
           <h2 class="">بيانات المريض</h2>
+
+        <div id="news" class="hide">
+          <h5 id="msg"> ✔تم اضافه بيانات المريض ✔</h5>
+        </div>
+
           <form class="navbar-form datauser" dir="rtl" role="search">
             <div class="inputs">
               <div class="form-group">
@@ -48,6 +53,7 @@
                   placeholder="اسم المريض"
                 />
               </div>
+              
             </div>
             <div class="tests">
               <label for="">
@@ -97,23 +103,34 @@
                   id="RH - GROUPING"
               /></label>
               <label for="">
-                AMYLASE - LIPASE<input
+                AMY - LIP<input
                   type="checkbox"
-                  name="AMYLASE - LIPASE"
-                  value="AMYLASE - LIPASE"
-                  id="AMYLASE - LIPASE"
+                  name="AMY - LIP"
+                  value="AMY - LIP"
+                  id="AMY - LIP"
+              /></label>
+              <label for="">
+                Covid<input
+                  type="checkbox"
+                  name="Covid"
+                  value="Covid"
+                  id="Covid"
               /></label>
             </div>
-            <button
-              type="button"
-              class="btn btn-primary"
-              id="register_test "
-              onclick="register()"
-            >
-              تسجيل
-            </button>
+            
+          </div>
+           
           </form>
+          <button
+        type="button"
+        class="btn btn-primary "
+        id="register_test "
+        onclick="register()"
+      >
+        تسجيل
+      </button>
         </div>
+        
       </div>
 
      <div class="search ">
@@ -131,11 +148,14 @@
               <th scope="col">الرقم</th>
               <th scope="col">اسم المريض</th>
               <th scope="col">التحاليل</th>
+              <th scope="col">الوقت</th>
+
               <th scope="col">حذف</th>
               <th scope="col">تعديل</th>
+
             </tr>
           </thead>
-          <tbody class="table-group-divider" id="DataFill"></tbody>
+          <tbody class="table-group-divider" id="DataFill" dir="ltr"></tbody>
         </table>
       </div>
     </div>

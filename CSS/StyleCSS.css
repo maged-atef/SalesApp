@@ -28,7 +28,7 @@ body{
    flex-wrap: wrap;
    
 }
-@media (max-width:400px) {
+@media (max-width:540px) {
     .head .inner h2{ 
         font-size: 14px;
         width: 100%;
@@ -39,6 +39,20 @@ body{
     }
     .head .inner{
         padding: 0 0 ;
+    }
+    .tests label{ 
+        font-size: 10px;
+        
+    }
+    .tests input {
+       
+        text-align: left;
+        margin: 0;
+        padding:0;
+       
+    }
+    .output{ 
+        font-size: 10px;
     }
     
     
@@ -81,7 +95,7 @@ body{
     width: 30%;
 }
 .tests input{
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .form-group{
     /* background-color: red; */
@@ -147,4 +161,12 @@ body{
 }
 .search i { 
     padding-right: 2rem;
+}
+
+.hide{ 
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
 }
